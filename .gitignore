@@ -1,5 +1,6 @@
-.DS_Store
-pkg
-doc
-*~
-*.swp
+*.sw[opn]
+Gemfile.lock
+*.gem
+/docs/examples
+coverage
+*.log
