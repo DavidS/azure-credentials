@@ -336,8 +336,10 @@ azure_client_secret = "#{s[:client_secret]}"
         response = nil
         Net::HTTP.start(uri.host, uri.port, use_ssl: true) do |http|
           request = Net::HTTP::Post.new uri
+          CustomLogger.log.debug "Request: #{request.uri} (#{request.method}) #{data}"
           request.body = data
           response = http.request request
+          CustomLogger.log.debug "Response: #{response.body}"
         end
         response
       end
