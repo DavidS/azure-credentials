@@ -191,6 +191,7 @@ INFO [2016-03-28 16:04:52] Done!
 
 1. Currently this tool does not support certificate-based authentication. 
 2. This tool will not work if MFA (multi-factor authentication) is set to **required** for administration of the Azure Active Directory domain.
+3. This tool does not work if you sign in with an ADFS-federated account.
 
 ## Contributing
 
